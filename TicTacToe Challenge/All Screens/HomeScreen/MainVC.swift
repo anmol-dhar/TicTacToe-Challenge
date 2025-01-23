@@ -66,16 +66,16 @@ class MainVC: UIViewController {
         
         if checkForVictory(CROSS){
             crossScore += 1
-            resultAlert(title: "Cross Win!")
+            presentResultFromBottom(title: "Cross Win!")
         }
         
         if checkForVictory(ZERO){
             zeroScore += 1
-            resultAlert(title: "Zero Win!")
+            presentResultFromBottom(title: "Zero Win!")
         }
         
         if(fullBoard()){
-            resultAlert(title: "Draw")
+            presentResultFromBottom(title: "Draw")
         }
         
     }
@@ -118,13 +118,20 @@ class MainVC: UIViewController {
         return button.title(for: .normal) == symbol
     }
     
-    func resultAlert(title: String){
-        let message = "\nZero " + String(zeroScore) + "\n\nCross " + String(crossScore)
-        let ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
-        ac.addAction(UIAlertAction(title: "Reset", style: .default, handler: { (_) in
-            self.resetBoard()
-        }))
-        self.present(ac, animated: true)
+    func presentResultFromBottom(title: String) {
+        let xibViewController = WinnerScreenVC(nibName: "WinnerScreenVC", bundle: nil)
+        xibViewController.modalPresentationStyle = .overCurrentContext
+        xibViewController.modalTransitionStyle = .coverVertical
+        xibViewController.providesPresentationContextTransitionStyle = true
+        xibViewController.definesPresentationContext = true
+        xibViewController.isModalInPresentation = true
+        
+        xibViewController.scoreZero = "\(zeroScore)"
+        xibViewController.scoreCross = "\(crossScore)"
+        xibViewController.winnerText = title
+        xibViewController.delegate = self
+
+        present(xibViewController, animated: true, completion: nil)
     }
     
     func resetBoard() {
@@ -177,3 +184,8 @@ class MainVC: UIViewController {
     
 }
 
+extension MainVC: WinnerScreenDelegate {
+    func didTapButtonOnWinnerScreen() {
+        resetBoard()
+    }
+}
