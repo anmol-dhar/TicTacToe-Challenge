@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F6378432D45727100D035CB /* win_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F6378422D45727100D035CB /* win_sound.wav */; };
+		5F6378452D4578E400D035CB /* draw_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F6378442D4578E400D035CB /* draw_sound.wav */; };
 		5F8199822D42318200EC9C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8199812D42318200EC9C7A /* AppDelegate.swift */; };
 		5F8199842D42318200EC9C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8199832D42318200EC9C7A /* SceneDelegate.swift */; };
 		5F8199862D42318200EC9C7A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8199852D42318200EC9C7A /* MainVC.swift */; };
@@ -16,9 +18,13 @@
 		5F81999B2D42550700EC9C7A /* WinnerScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8199992D42550700EC9C7A /* WinnerScreenVC.swift */; };
 		5F81999C2D42550700EC9C7A /* WinnerScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F81999A2D42550700EC9C7A /* WinnerScreenVC.xib */; };
 		5F81999F2D425AB500EC9C7A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F81999E2D425AB500EC9C7A /* Extensions.swift */; };
+		6DD70B704BF8775F1505F0EC /* Pods_TicTacToe_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522B6333CBBCAA4783FCB6AC /* Pods_TicTacToe_Challenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		522B6333CBBCAA4783FCB6AC /* Pods_TicTacToe_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicTacToe_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6378422D45727100D035CB /* win_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = win_sound.wav; path = ../../../../../Downloads/win_sound.wav; sourceTree = "<group>"; };
+		5F6378442D4578E400D035CB /* draw_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = draw_sound.wav; path = ../../../../../Downloads/draw_sound.wav; sourceTree = "<group>"; };
 		5F81997E2D42318200EC9C7A /* TicTacToe Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TicTacToe Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8199812D42318200EC9C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F8199832D42318200EC9C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +36,8 @@
 		5F8199992D42550700EC9C7A /* WinnerScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerScreenVC.swift; sourceTree = "<group>"; };
 		5F81999A2D42550700EC9C7A /* WinnerScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WinnerScreenVC.xib; sourceTree = "<group>"; };
 		5F81999E2D425AB500EC9C7A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8F75B631FCDEA12056C801F3 /* Pods-TicTacToe Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe Challenge.debug.xcconfig"; path = "Target Support Files/Pods-TicTacToe Challenge/Pods-TicTacToe Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BF9CF23135039B6E60D9C5 /* Pods-TicTacToe Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe Challenge.release.xcconfig"; path = "Target Support Files/Pods-TicTacToe Challenge/Pods-TicTacToe Challenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD70B704BF8775F1505F0EC /* Pods_TicTacToe_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F6378412D45725B00D035CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F6378422D45727100D035CB /* win_sound.wav */,
+				5F6378442D4578E400D035CB /* draw_sound.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		5F8199752D42318200EC9C7A = {
 			isa = PBXGroup;
 			children = (
 				5F8199802D42318200EC9C7A /* TicTacToe Challenge */,
 				5F81997F2D42318200EC9C7A /* Products */,
+				691D995C1C60AFDBA37526CA /* Pods */,
+				6BC4D76F2A27B5C64D8659D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +85,7 @@
 				5F81999D2D425AA800EC9C7A /* Utils */,
 				5F8199972D4254B000EC9C7A /* All Screens */,
 				5F8199952D42544B00EC9C7A /* Delegates */,
+				5F6378412D45725B00D035CB /* Resources */,
 				5F8199872D42318200EC9C7A /* Main.storyboard */,
 				5F81998A2D42318300EC9C7A /* Assets.xcassets */,
 				5F81998C2D42318300EC9C7A /* LaunchScreen.storyboard */,
@@ -116,6 +137,23 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		691D995C1C60AFDBA37526CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F75B631FCDEA12056C801F3 /* Pods-TicTacToe Challenge.debug.xcconfig */,
+				E1BF9CF23135039B6E60D9C5 /* Pods-TicTacToe Challenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6BC4D76F2A27B5C64D8659D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				522B6333CBBCAA4783FCB6AC /* Pods_TicTacToe_Challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F8199922D42318300EC9C7A /* Build configuration list for PBXNativeTarget "TicTacToe Challenge" */;
 			buildPhases = (
+				081420126CFBE07E0B7B9878 /* [CP] Check Pods Manifest.lock */,
 				5F81997A2D42318200EC9C7A /* Sources */,
 				5F81997B2D42318200EC9C7A /* Frameworks */,
 				5F81997C2D42318200EC9C7A /* Resources */,
+				3C152DA345AE910672074357 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,7 +214,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6378432D45727100D035CB /* win_sound.wav in Resources */,
 				5F81998B2D42318300EC9C7A /* Assets.xcassets in Resources */,
+				5F6378452D4578E400D035CB /* draw_sound.wav in Resources */,
 				5F81998E2D42318300EC9C7A /* Base in Resources */,
 				5F8199892D42318200EC9C7A /* Base in Resources */,
 				5F81999C2D42550700EC9C7A /* WinnerScreenVC.xib in Resources */,
@@ -182,6 +224,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		081420126CFBE07E0B7B9878 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicTacToe Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C152DA345AE910672074357 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicTacToe Challenge/Pods-TicTacToe Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicTacToe Challenge/Pods-TicTacToe Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicTacToe Challenge/Pods-TicTacToe Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F81997A2D42318200EC9C7A /* Sources */ = {
@@ -255,7 +339,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -270,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -318,7 +402,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -327,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -339,6 +423,7 @@
 		};
 		5F8199932D42318300EC9C7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F75B631FCDEA12056C801F3 /* Pods-TicTacToe Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -374,6 +459,7 @@
 		};
 		5F8199942D42318300EC9C7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1BF9CF23135039B6E60D9C5 /* Pods-TicTacToe Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

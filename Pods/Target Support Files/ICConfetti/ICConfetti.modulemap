@@ -1,0 +1,6 @@
+framework module ICConfetti {
+  umbrella header "ICConfetti-umbrella.h"
+
+  export *
+  module * { export * }
+}

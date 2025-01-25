@@ -1,0 +1,16 @@
+PODS:
+  - ICConfetti (0.0.1)
+
+DEPENDENCIES:
+  - ICConfetti
+
+SPEC REPOS:
+  trunk:
+    - ICConfetti
+
+SPEC CHECKSUMS:
+  ICConfetti: 64f471f8a89dedace1eb30e72afb063a44bcc527
+
+PODFILE CHECKSUM: fa914315cd472cbad1ed2fc53dc4177b0c90cee0
+
+COCOAPODS: 1.16.2
